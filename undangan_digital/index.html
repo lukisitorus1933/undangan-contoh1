@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#79603b">
+  <meta name="description" content="Undangan pernikahan digital">
+  <title>Undangan Pernikahan | Nama Mempelai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="music-control" id="musicControl" aria-label="Putar atau jeda musik" title="Musik">
+    <span id="musicIcon">♫</span>
+  </div>
+  <audio id="bgMusic" loop>
+    <!-- Ganti music.mp3 dengan file musik pilihan Anda -->
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="cover" id="cover">
+      <div class="cover-shade"></div>
+      <div class="cover-content">
+        <p class="eyebrow">THE WEDDING OF</p>
+        <p class="cover-date" id="coverDate">MINGGU, 20 DESEMBER 2026</p>
+        <h1><span id="coverBride">Ayu</span><i>&</i><span id="coverGroom">Bima</span></h1>
+        <div class="ornament">❧ ✦ ❧</div>
+        <p class="to-label">Kepada Yth.</p>
+        <p class="guest-name" id="guestName">Bapak/Ibu/Saudara/i</p>
+        <p class="small-note">Dengan segala hormat, kami mengundang Anda untuk hadir di hari bahagia kami.</p>
+        <button class="gold-button" id="openInvitation">Buka Undangan <span>↗</span></button>
+      </div>
+      <div class="cover-bottom">DENGAN MEMOHON RAHMAT TUHAN YANG MAHA ESA</div>
+    </section>
+
+    <div id="invitation" class="hidden">
+      <nav class="nav">
+        <a href="#home" class="brand">A <span>&</span> B</a>
+        <div class="nav-links">
+          <a href="#mempelai">Mempelai</a><a href="#acara">Acara</a><a href="#rsvp">RSVP</a>
+        </div>
+      </nav>
+
+      <section class="hero section" id="home">
+        <p class="eyebrow">ASSALAMUALAIKUM WARAHMATULLAHI WABARAKATUH</p>
+        <div class="flourish">❧</div>
+        <p class="intro">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami:</p>
+        <h2><span id="heroBride">Ayu</span> <em>&</em> <span id="heroGroom">Bima</span></h2>
+        <p class="date-line" id="heroDate">Minggu, 20 Desember 2026</p>
+        <div class="countdown">
+          <div><strong id="days">00</strong><span>Hari</span></div>
+          <div><strong id="hours">00</strong><span>Jam</span></div>
+          <div><strong id="minutes">00</strong><span>Menit</span></div>
+          <div><strong id="seconds">00</strong><span>Detik</span></div>
+        </div>
+        <a class="text-link" href="#acara">Lihat Detail Acara ↓</a>
+      </section>
+
+      <section class="quote section">
+        <div class="section-ornament">✦</div>
+        <p class="arabic">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنْفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا</p>
+        <p class="quote-text">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri agar kamu cenderung dan merasa tenteram kepadanya.”</p>
+        <span class="quote-source">QS. Ar-Rum: 21</span>
+      </section>
+
+      <section class="couple section" id="mempelai">
+        <p class="eyebrow">KEDUA MEMPELAI</p><h2>Dengan penuh rasa syukur</h2>
+        <p class="section-desc">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.</p>
+        <div class="couple-grid">
+          <article class="person">
+            <div class="portrait portrait-one">A</div>
+            <h3 id="brideName">Ayu Lestari</h3>
+            <p class="parents">Putri dari</p><p id="brideParents">Bapak Nama Ayah & Ibu Nama Ibu</p>
+            <a href="#" class="social" id="brideSocial">@instagram</a>
+          </article>
+          <div class="ampersand">&</div>
+          <article class="person">
+            <div class="portrait portrait-two">B</div>
+            <h3 id="groomName">Bima Pratama</h3>
+            <p class="parents">Putra dari</p><p id="groomParents">Bapak Nama Ayah & Ibu Nama Ibu</p>
+            <a href="#" class="social" id="groomSocial">@instagram</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="events section" id="acara">
+        <p class="eyebrow">SAVE THE DATE</p><h2>Rangkaian Acara</h2>
+        <p class="section-desc">Dengan memohon keberkahan dan kebahagiaan, kami mengundang Anda untuk hadir pada acara pernikahan kami.</p>
+        <div class="event-grid">
+          <article class="event-card">
+            <div class="event-symbol">❧</div><h3>Akad Nikah</h3>
+            <p class="event-date" id="akadDate">Minggu, 20 Desember 2026</p>
+            <p><b>Waktu</b><br><span id="akadTime">08.00 WIB – selesai</span></p>
+            <p><b>Tempat</b><br><span id="akadPlace">Gedung / lokasi acara, alamat lengkap</span></p>
+            <a class="outline-button" id="akadMap" href="https://maps.google.com" target="_blank" rel="noopener">Petunjuk Lokasi ↗</a>
+          </article>
+          <article class="event-card">
+            <div class="event-symbol">✦</div><h3>Resepsi</h3>
+            <p class="event-date" id="resepsiDate">Minggu, 20 Desember 2026</p>
+            <p><b>Waktu</b><br><span id="resepsiTime">11.00 – 14.00 WIB</span></p>
+            <p><b>Tempat</b><br><span id="resepsiPlace">Gedung / lokasi acara, alamat lengkap</span></p>
+            <a class="outline-button" id="resepsiMap" href="https://maps.google.com" target="_blank" rel="noopener">Petunjuk Lokasi ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="story section">
+        <p class="eyebrow">OUR MOMENT</p><h2>Awal dari cerita kami</h2>
+        <p class="section-desc">Setiap pertemuan adalah bagian dari takdir. Dengan penuh syukur, kami melangkah bersama menuju perjalanan baru.</p>
+        <div class="story-line"><span>❧</span><p>Hari istimewa ini menjadi awal perjalanan kami dalam membangun keluarga yang penuh cinta, doa, dan kasih sayang.</p><span>✦</span></div>
+      </section>
+
+      <section class="gallery section">
+        <p class="eyebrow">MEMORIES</p><h2>Galeri Kami</h2>
+        <p class="section-desc">Beberapa kenangan yang ingin kami bagikan.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-a">A <span>&</span> B</div>
+          <div class="gallery-item gallery-b">Our<br>Story</div>
+          <div class="gallery-item gallery-c">Forever</div>
+        </div>
+        <p class="hint">Ganti kotak galeri ini dengan foto prewedding Anda melalui CSS atau tambahkan elemen gambar di HTML.</p>
+      </section>
+
+      <section class="rsvp section" id="rsvp">
+        <p class="eyebrow">KONFIRMASI KEHADIRAN</p><h2>RSVP</h2>
+        <p class="section-desc">Mohon konfirmasi kehadiran Anda agar kami dapat mempersiapkan acara dengan baik.</p>
+        <form id="rsvpForm">
+          <label>Nama lengkap<input type="text" id="rsvpName" placeholder="Nama Anda" required></label>
+          <label>Jumlah tamu<select id="rsvpCount"><option>1 orang</option><option>2 orang</option><option>3 orang</option><option>4 orang</option></select></label>
+          <label>Konfirmasi kehadiran<select id="rsvpStatus"><option value="Hadir">Insyaallah hadir</option><option value="Tidak dapat hadir">Maaf, belum dapat hadir</option></select></label>
+          <label>Ucapan & doa<textarea id="rsvpMessage" rows="3" placeholder="Tuliskan ucapan dan doa terbaik..."></textarea></label>
+          <button class="gold-button" type="submit">Kirim Konfirmasi via WhatsApp ↗</button>
+        </form>
+      </section>
+
+      <section class="gift section">
+        <p class="eyebrow">TANDA KASIH</p><h2>Wedding Gift</h2>
+        <p class="section-desc">Doa restu Anda merupakan hadiah terindah bagi kami. Namun apabila ingin memberikan tanda kasih, dapat melalui informasi berikut.</p>
+        <div class="gift-card"><span class="bank">BANK</span><h3 id="bankName">BCA</h3><p class="account" id="accountNumber">1234567890</p><p id="accountOwner">a.n. Nama Penerima</p><button class="outline-button" id="copyAccount">Salin Nomor Rekening</button></div>
+        <p class="address-gift">Alamat pengiriman kado:<br><span id="giftAddress">Isi alamat penerima kado di sini</span></p>
+      </section>
+
+      <section class="closing section">
+        <div class="flourish">❧ ✦ ❧</div>
+        <p>Merupakan kebahagiaan dan kehormatan bagi kami apabila Anda berkenan hadir dan memberikan doa restu.</p>
+        <p class="closing-greeting">Wassalamualaikum Warahmatullahi Wabarakatuh</p>
+        <h2 id="closingNames">Ayu & Bima</h2>
+        <p class="eyebrow">KELUARGA BESAR KEDUA MEMPELAI</p>
+      </section>
+      <footer>Made with love <span>♥</span> | Undangan Digital</footer>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
